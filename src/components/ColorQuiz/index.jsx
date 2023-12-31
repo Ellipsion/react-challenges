@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 
 const ColorQuiz = () => {
     // Guess the correct color
+    // Day 1
+    // 31 Dec 2023
     const [colors, setColors] = useState([]);
     const [idx, setIdx] = useState(0);
     const [isCorrect, setIsCorrect] = useState(false);
