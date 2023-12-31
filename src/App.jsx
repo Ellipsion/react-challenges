@@ -15,6 +15,10 @@ const router = createBrowserRouter([
     path: "/",
     element: <HomeSimple />,
   },
+  {
+    path: "challenge/1",
+    element: <ColorQuiz />
+  }
 ]);
 
 function App() {
