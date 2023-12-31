@@ -16,6 +16,5 @@ This repository serves as a record of my journey in learning React.js by tacklin
 
 1. **Challenge 1:  Guess the color**
 
-   - ![Challenge 1 Screenshot](screenshots/challenge1.png)
-   - I am starting this series with this challenge.
-   - I created a simple random color generator function with `Math.random`
+   - ![Challenge 1 Screenshot](https://react-challenges-one.vercel.app/screenshots/challenge1.png)
+   - Created a simple random hex color generator function with `Math.random`
