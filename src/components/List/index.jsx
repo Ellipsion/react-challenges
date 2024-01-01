@@ -4,8 +4,14 @@ const challenges = [
         difficulty: 'Easy',
         imageUrl:
             '/screenshots/challenge1.png',
-        updated: "30 Dec'23",
-        lastSeenDateTime: '2023-01-23T13:23Z',
+        updated: "30th Dec'23",
+    },
+    {
+        name: 'Search Synonyms',
+        difficulty: 'Easy',
+        imageUrl:
+            '/screenshots/challenge2.png',
+        updated: "1st Jan'24",
     },
 ]
 
