@@ -1,7 +1,7 @@
 import React from 'react'
 
 const WordList = () => {
-    return <Loading />
+    return <Loader />
     return (
         <ul className='my-10'>
             <li className='list-item list-disc'><p className='text-xl text-gray-700 hover:text-gray-500 font-semibold'>Word</p></li>
@@ -9,7 +9,7 @@ const WordList = () => {
     )
 }
 
-const Loading = () => {
+const Loader = () => {
     const randomWidth = () => {
         return 50 + Math.floor(Math.random() * 70)
     }
