@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const challenges = [
     {
         name: 'Guess the Color',
@@ -21,7 +23,7 @@ export default function List() {
             {challenges.map((item, idx) => (
 
                 <li key={`challenge-${idx}`} >
-                    <a href={`/challenge/${idx + 1}`} className="flex justify-between gap-x-6 py-5 hover:translate-x-1 ease-out transition-transform">
+                    <Link to={`/challenge/${idx + 1}`} className="flex justify-between gap-x-6 py-5 hover:translate-x-1 ease-out transition-transform">
                         <div className="flex min-w-0 gap-x-4">
                             <img className="h-12 w-12 flex-none rounded-xl bg-gray-50" src={item.imageUrl} alt="" />
                             <div className="min-w-0 flex-auto">
@@ -42,7 +44,7 @@ export default function List() {
                             </p>
 
                         </div>
-                    </a>
+                    </Link>
                 </li>
 
             ))}
