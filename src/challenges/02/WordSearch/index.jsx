@@ -30,7 +30,7 @@ const WordSearch = () => {
         </div>
       </div>
       {
-        synonyms.length && (
+        (synonyms.length > 0) && (
           <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm  rounded-md p-10">
             <h1 className="font-bold text-4xl text-center">Synonyms</h1>
             <WordList loading={isLoading} synonyms={synonyms} />
