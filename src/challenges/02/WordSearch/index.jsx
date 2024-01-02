@@ -23,48 +23,21 @@ const WordSearch = () => {
     <div className="flex relative overflow-hidden min-h-screen flex-1 flex-col">
       <Header />
       <div className="h-[80px] flex bg-black justify-center items-center w-full bg-gradient-to-r from-white to-fuchsia-200 px-5 lg:px-12">
-        <div className="relative h-[140px] sm:mx-auto sm:w-full md:max-w-lg">
+        <div className="relative h-[140px] sm:mx-auto w-full md:max-w-lg">
           <form onSubmit={handleSubmit}>
             <SearchBar value={word} onChange={(e) => setWord(e.target.value)} />
           </form>
         </div>
       </div>
-      <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm  rounded-md p-10">
-        <h1 className="font-bold text-4xl text-center">Synonyms</h1>
-        <WordList loading={true} words={[]} />
-      </div>
-      <div className="hidden z-10 sm:mx-auto bg-blue-500 sm:w-full sm:max-w-sm  rounded-md p-5">
-        <h1 className="font-bold text-zinc-400 text-4xl py-10 ">Search Synonyms</h1>
-        <form className="relative w-full" onSubmit={handleSubmit}>
-          <label className="text-sm text-zinc-600 font-medium" htmlFor="word-input">Your Word</label>
-          <div className="flex gap-5">
-            <input value={word} onChange={(e) => setWord(e.target.value)} id="word-input" className="w-full h-full bg-gray-100 rounded text-black p-2 hover:outline-none hover:bg-gray-50 transition-colors focus:outline-none focus:bg-white" type="text" />
-            <button>Search</button>
+      {
+        synonyms.length && (
+          <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm  rounded-md p-10">
+            <h1 className="font-bold text-4xl text-center">Synonyms</h1>
+            <WordList loading={isLoading} synonyms={synonyms} />
           </div>
-          {
-            // (suggest && suggestions) && (
-            //   <ul className="absolute w-full flex rounded-lg flex-col mt-1">
-            //     {suggestions.map((syn) => (
-            //       <li className="bg-gray-50  p-2 w-3/4 border-b font-medium text-sm" key={`${syn.word}-${syn.score}`}>{syn.word}</li>
-            //     ))}
-            //   </ul>
-            // )
-          }
+        )
+      }
 
-        </form>
-        {
-          isLoading
-            ?
-            <Loader />
-            :
-            <ul className="w-full flex flex-col mt-10">
-              {synonyms.map((syn) => (
-                <li className="bg-gray-100 rounded p-2 w-3/4 border-b font-medium text-sm" key={`${syn.word}-${syn.score}`}>{syn.word}</li>
-              ))}
-            </ul>
-        }
-
-      </div>
     </div>
   );
 };
