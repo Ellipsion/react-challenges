@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import useGetSynonyms from "../hooks/useGetSynonyms";
 import useGetSuggestions from "../hooks/useGetSuggestions";
 import Header from "../components/DummyHeader";
+import SearchBar from "../components/SearchBar";
+import WordList from "../components/WordList";
 
 const WordSearch = () => {
   const [word, setWord] = useState("");
@@ -20,8 +22,16 @@ const WordSearch = () => {
   return (
     <div className="flex relative overflow-hidden min-h-screen flex-1 flex-col">
       <Header />
-      <div className="relative h-[80px] flex bg-black justify-between items-center w-full bg-gradient-to-r from-white to-fuchsia-200 px-5 lg:px-12"></div>
-      <div className="z-10 sm:mx-auto bg-blue-500 sm:w-full sm:max-w-sm  rounded-md p-5">
+      <div className="h-[80px] flex bg-black justify-center items-center w-full bg-gradient-to-r from-white to-fuchsia-200 px-5 lg:px-12">
+        <div className="relative h-[140px] sm:mx-auto sm:w-full md:max-w-lg">
+          <SearchBar />
+        </div>
+      </div>
+      <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm  rounded-md p-10">
+        <h1 className="font-bold text-4xl text-center">Synonyms</h1>
+        <WordList />
+      </div>
+      <div className="hidden z-10 sm:mx-auto bg-blue-500 sm:w-full sm:max-w-sm  rounded-md p-5">
         <h1 className="font-bold text-zinc-400 text-4xl py-10 ">Search Synonyms</h1>
         <form className="relative w-full" onSubmit={handleSubmit}>
           <label className="text-sm text-zinc-600 font-medium" htmlFor="word-input">Your Word</label>
