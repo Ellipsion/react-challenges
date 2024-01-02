@@ -13,7 +13,7 @@ const Header = () => {
                     ))
                 }
             </div>
-            <div className='flex gap-10 justify-center items-center'>
+            <div className='flex gap-10 justify-center cursor-pointer items-center'>
                 <h1 className='font-semibold text-2xl -rotate-6 tracking-wider' style={{
                     fontFamily: ['Satisfy', 'cursive']
                 }}>Ellipsion</h1>
