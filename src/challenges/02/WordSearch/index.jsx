@@ -24,14 +24,14 @@ const WordSearch = () => {
       <Header />
       <div className="h-[80px] flex bg-black justify-center items-center w-full bg-gradient-to-r from-white to-fuchsia-200 px-5 lg:px-12">
         <div className="relative h-[140px] sm:mx-auto sm:w-full md:max-w-lg">
-          <form handleSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit}>
             <SearchBar value={word} onChange={(e) => setWord(e.target.value)} />
           </form>
         </div>
       </div>
       <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm  rounded-md p-10">
         <h1 className="font-bold text-4xl text-center">Synonyms</h1>
-        <WordList />
+        <WordList loading={true} words={[]} />
       </div>
       <div className="hidden z-10 sm:mx-auto bg-blue-500 sm:w-full sm:max-w-sm  rounded-md p-5">
         <h1 className="font-bold text-zinc-400 text-4xl py-10 ">Search Synonyms</h1>
