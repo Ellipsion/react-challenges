@@ -23,3 +23,12 @@ This repository serves as a record of my journey in learning React.js by tacklin
 - Created search bar, Loading UI
 - Created custom hook to fetch and store data, loading states and refetch data.
 - Responsive UI with tailwind and inspiration from Dribbble.
+
+3. **Challenge 3:  Sudoku**
+
+- ![Challenge 2 Screenshot](https://react-challenges-one.vercel.app/screenshots/challenge3.png)
+- Problem Statement: Fetch an [external API](https://sudoku-api.vercel.app/ "Dosuku API") to find Sudoku board and create a UI for it.
+- Created sudoku grids
+- Created custom hook to fetch and store data, loading states and refetch data.
+- Responsive UI with tailwind and inspiration from Dribbble.
+- Edge cases to display the game state and custom loader.
