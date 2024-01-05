@@ -1,21 +1,5 @@
 import { Link } from "react-router-dom"
-
-const challenges = [
-    {
-        name: 'Guess the Color',
-        difficulty: 'Easy',
-        imageUrl:
-            '/screenshots/challenge1.png',
-        updated: "30th Dec'23",
-    },
-    {
-        name: 'Search Synonyms',
-        difficulty: 'Easy',
-        imageUrl:
-            '/screenshots/challenge2.png',
-        updated: "1st Jan'24",
-    },
-]
+import { challenges } from "../../routes"
 
 export default function List() {
     return (

@@ -9,9 +9,11 @@ import {
 import Home from "./pages/Home";
 import HomeSimple from './pages/HomeSimple';
 
+
 import ColorQuiz from './challenges/01/ColorQuiz'
 import WordSearch from './challenges/02/WordSearch';
 import Sudoku from './challenges/03/Sudoku';
+import { challenges } from './routes';
 
 const router = createBrowserRouter([
   {
@@ -20,20 +22,21 @@ const router = createBrowserRouter([
   },
   {
     path: "challenge/",
-    children: [
-      {
-        path: "1",
-        element: <ColorQuiz />
-      },
-      {
-        path: "2",
-        element: <WordSearch />
-      },
-      {
-        path: "3",
-        element: <Sudoku />
-      },
-    ]
+    // children: [
+    //   {
+    //     path: "1",
+    //     element: <ColorQuiz />
+    //   },
+    //   {
+    //     path: "2",
+    //     element: <WordSearch />
+    //   },
+    //   {
+    //     path: "3",
+    //     element: <Sudoku />
+    //   },
+    // ]
+    children: challenges
   }
 ]);
 
