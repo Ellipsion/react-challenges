@@ -11,6 +11,7 @@ import HomeSimple from './pages/HomeSimple';
 
 import ColorQuiz from './challenges/01/ColorQuiz'
 import WordSearch from './challenges/02/WordSearch';
+import Sudoku from './challenges/03/Sudoku';
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: "2",
         element: <WordSearch />
+      },
+      {
+        path: "3",
+        element: <Sudoku />
       },
     ]
   }

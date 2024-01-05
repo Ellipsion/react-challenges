@@ -19,7 +19,7 @@ This repository serves as a record of my journey in learning React.js by tacklin
 2. **Challenge 2:  Search Synonyms**
 
 - ![Challenge 2 Screenshot](https://react-challenges-one.vercel.app/screenshots/challenge2.png)
-- Problem Statement: Fetch an external API to search synonyms for the searched word and show data in react app.
+- Problem Statement: Fetch an [external API](https://www.datamuse.com/api/ "Datamuse API") to search synonyms for the searched word and show data in react app.
 - Created search bar, Loading UI
-- Created hook to store data, loading states and refetch data.
-- Created UI with tailwind and inspiration from Dribbble.
+- Created custom hook to fetch and store data, loading states and refetch data.
+- Responsive UI with tailwind and inspiration from Dribbble.
