@@ -44,14 +44,15 @@ const DotCanvas = () => {
     })
     return (
         <div className='flex flex-col w-full h-screen'>
+            <div id='canvas' className='relative w-full flex-1 bg-slate-600' onClick={handleClick}>
+                {dots}
+            </div>
             <div className='w-full flex gap-10 items-center justify-center h-12 bg-slate-500'>
                 <Button disabled={!stack.length} onClick={handleUndo}>undo</Button>
                 <Button disabled={!popped.length} onClick={handleRedo}>redo</Button>
                 <Button onClick={handleReset}>reset</Button>
             </div>
-            <div id='canvas' className='relative w-full flex-1 bg-slate-600' onClick={handleClick}>
-                {dots}
-            </div>
+
         </div>
     )
 }
