@@ -32,3 +32,10 @@ This repository serves as a record of my journey in learning React.js by tacklin
 - Created custom hook to fetch and store data, loading states and refetch data.
 - Responsive UI with tailwind and inspiration from Dribbble.
 - Edge cases to display the game state and custom loader.
+
+**Challenge 4:  Dot Canvas**
+
+- ![Challenge 2 Screenshot](https://react-challenges-one.vercel.app/screenshots/challenge3.png)
+- Problem Statement: Add a dot everytime the user click on the box with undo and redo features.
+- Created custom hook for implementing **Stack** Data Structure.
+- Added points by extracting click position from DOM event

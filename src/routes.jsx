@@ -31,7 +31,7 @@ const challenges = [
   {
     name: "Dot Canvas",
     difficulty: "Junior",
-    imageUrl: "/screenshots/challenge3.png",
+    imageUrl: "/screenshots/challenge4.png",
     updated: "6th Jan'24",
     path: "4",
     element: <DotCanvas />,
